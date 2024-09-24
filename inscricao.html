@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscrição</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -18,12 +19,35 @@
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">NOSSA INSCRIÇÃO!!</h1>
-            <p class="apresentacao__conteudo__paragrafo">Este é nosso formulário de inscrição para você que deseja participar da maior palestra de todos os tempos do UNIDEP</p>
+            <p class="apresentacao__conteudo__texto_inscricao">Este é nosso formulário de inscrição para você que deseja participar da maior palestra de todos os tempos do UNIDEP</p>
+
+            <form action="processar_inscricao.php" method="post" class="formulario">
+                <div class="formulario__grupo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="formulario__grupo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="formulario__grupo">
+                    <label for="ingresso">Tipo de Ingresso:</label>
+                    <select id="ingresso" name="ingresso" required>
+                        <option value="presencial">Presencial</option>
+                        <option value="virtual">Virtual</option>
+                        <option value="completo">Completo</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Inscrever-se</button>
+            </form>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="rodape">
+        <p>Desenvolvido por: Nicolas © 2024</p>
     </footer>
 </body>
 </html>

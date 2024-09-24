@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #B5C18E;
-    --cor-secundaria: #EADBC8;
-    --cor-terciaria: #C7B7A3;
+    --cor-primaria: #F3FF90;
+    --cor-secundaria: #06D001;
+    --cor-terciaria: #9BEC00;
+    --cor-quartenaria: #059212; 
     --cor-hover: #F1F1F1;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
-/**{
-    margin: 0;
-    padding: 0;
-}*/
 
 body{
     box-sizing: border-box;
     background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-secundaria);
 }
 
+/*header {
+    background-color: #f8f9fa;
+    padding: 20px;
+}*/
+
 .cabecalho{
-    padding: 2% 0% 0% 15%;
+    padding: 2% 0% 0% 26%;
 }
 
 .cabecalho__menu {
@@ -30,17 +34,135 @@ body{
     gap: 90px;
 }
 
-.cabecalho__menu_link {
-    display: flex;
-    flex-direction: row;
-    gap: 90px;
+.cabecalho__menu__link {
+    margin: 0 15px;
     text-decoration: none;
+    color: var(--cor-quartenaria);
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-spacing: 15px;
+    padding: 11px;
+    margin: 10px;
+    border-color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__link:hover{
+    background-color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 20px;
+    text-align: center;
+}
+
+.apresentacao__conteudo__texto_inscricao {
+    text-align: center;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid var(--cor-quartenaria);
+    border-radius: 5px;
+    background-color: #D5ED9F;
+}
+
+.formulario__grupo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #6A9C89;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-terciaria);
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-quartenaria);
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    font-family: var(--cor-quartenaria);
+    font-size: 12px;
+    font-weight: 5px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .apresentacao__conteudo__titulo {
-    
+    color: var(--cor-quartenaria);
+    text-align: center;
+    padding: 5% 5% 5% 5%;
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
 }
 
-.apresentacao__conteudo__paragrafo {
-    
+.apresentacao__conteudo__texto {
+    text-align: left;
+    padding: 0% 2% 2% 2%;
+    font-family: var(--fonte-secundaria);
 }
+
+.apresentacao__imagem{
+    width: 50%;
+    align-items: center;
+}
+
+.apresentacao__conteudo__texto_contato {
+    text-align: center;
+    padding: 5px 15px 50px;
+}
+
+.instagram {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--cor-quartenaria);
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-spacing: 15px;
+    padding: 11px 15px 10px 15px;
+    margin: 10px;
+    border-color: var(--cor-secundaria);   
+}
+
+.instagram:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.imagem__insta {
+    width: 15px;
+    padding: 0px 5px 0px;
+}
+
+/*.foto_clovis {
+    
+}*/
